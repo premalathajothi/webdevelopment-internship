@@ -1,1 +1,161 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>E-commerce product page</title>
+</head>
+<body>
+    
+    <header>
+        <nav> 
+            <ul>
+                <li><div class="icon">
+                    <i class="fas fa-mobile-alt"></i> Gazelle
+                  </div></li>
+                  <li><div class="search-bar">
+                    <span class="search-icon">&#128269;</span>
+                    <input type="text" class="search-input" placeholder="Search for products,brands and more">
+                </div></li>
+                
+                 <li><a href="#">Home</a></li> 
+                 <li><a href="#">Products</a></li>
+                 <li><a href="#">Brands</a></li> 
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Review</a></li> 
+                  <div class="heart">
+                    <i class="fas fa-heart"></i> 
+</div>
+<div class="cart">
+    <i class="fas fa-shopping-cart"></i> 
+</div>
+
+
+                </ul> 
+            </nav> 
+        </header> 
+        <main> 
+            <section class="product"> 
+                
+                <div class="left-section">
+                <div class="product-image">
+                    <br><br><br>
+                    <img src="1plus-1.webp" alt="Product Image">
+                    
+                    <br><br>
+                     <img src="1plus-2.webp" alt="Product Image">
+                     <br> <br>
+                    <img src="1plus-5.webp" alt="Product Image">
+                    <br> <br>
+                    <img src="1plus-3.jpg" alt="Product Image">
+                </div>
+           </div>
+           <div class="center-section">
+           <div class="large-image">
+            <img src="1plus-1.webp" alt="Product Image">
+           </div></div>
+                <div class="right-section">
+                 <div class="product-details">
+                     <h1>OnePlus Node CE 3 Lite 5G(Pastel Lime,256 GB)(8 GB RAM)</h1> 
+                     <div class="rating-button"> 
+                     <button> 4.7&#9733;</button>(2,67,459)Ratings & 4,456 Reviews
+                     <p class="product-description"></p>
+                    </div>
+                    <div class="product-price">
+                     <b>&#8377;58,999</b> 15% off<p>&#8377;69,900 </p>
+                     </div>
+                     <div class="product-buttons"> 
+                        <button>Add to Cart</button>
+                         <button>Buy Now</button> 
+                        </div>
+                     </div>
+                     <div class="offers">
+                        <p>Available offers</p>
+                        <dl>
+                            <dt>Bank Offer:</dt>
+                            <dd>🔖10% off on Bank of Baroda Credit Card and EMI Transactions, up to ₹750 on orders of ₹5,000 and above <span style="font-size: 80%;">T&amp;C</span></dd>
+                            <dd>🔖Flat ₹750 off on OneCard Credit Card and Credit EMI Transactions on orders of ₹12,500 and above <span style="font-size: 80%;">T&amp;C</span></dd>
+                            <dd>🔖5% Cashback on Flipkart Axis Bank Card <span style="font-size: 80%;">T&amp;C</span></dd>
+                        
+                            <dt>Special Price:</dt>
+                            <dd>🔖Get extra ₹584 off (price inclusive of cashback/coupon) <span style="font-size: 80%;">T&amp;C</span></dd>
+                          </dl>
+                        </div>
+<br>
+<div class="storage">
+    Storage <button>128Gb</button>
+    <button class="large">256Gb</button>
+
+</div>
+                        
+                        <br>
+                        <div class="highlights">
+                           <p> Highlights</p>
+                            <ul>
+    <li>8 GB RAM | 256 GB ROM</li>
+    <li>17.07 cm (6.72 inch) Display</li>
+    <li>108MP Rear Camera</li>
+    <li>5000 mAh Battery</li>
+                            </ul>
+                        </div>
+<br><br>
+
+
+                        <div class="payment-options">
+                            <ul>
+                            <p>Easy Payment Options</p><li>No cost EMI starting from ₹6,956/month</li>
+     <li>Cash on Delivery</li>
+     <li>Net banking & Credit/ Debit/ ATM card</li>
+     
+                             </ul>
+                         </div>
+                         <br>
+                         <div class="specification">
+<table border="1">
+    <tr>
+        <th colspan="2">Specification</th>
+        </tr>
+        <tr>
+            <td colspan="2">General</td>
+        </tr>
+        <tr>
+            <td >In the box</td>    
+            <td>Phone, charger, Data cable, sim ejector, user guide</td>
+            </tr>
+            <tr>
+            <td >Model Number</td>
+            <td>CPH2467</td>
+        </tr>
+            <tr>
+            <td  >Model Name</td>
+            <td>Nord CE 3 Lite 5G</td>
+        </tr>
+            <tr>
+            <td >Color</td>
+            <td>Pastel Lime</td>
+        </tr>
+            <tr>
+            <td >Browse Type</td>
+            <td>Smartphones</td>
+        </tr>
+            <tr>
+            <td >SIM Type</td>
+            <td >Dual Sim</td>
+            <tr>
+            <td >Touchscreen</td><td>Yes</td>
+        </tr>
+       
+</table>
+                         </div>
+                         
+                         </section> 
+                        </div>
+                    </div>
+                    </main>
+                     <footer> <p>&copy; 2022 Gazelle. All rights reserved.</p> </footer> 
+                    </body>
+                     </html>
