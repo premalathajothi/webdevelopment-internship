@@ -1,1 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   .search-bar {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    height: 40px ;
+   
+}
+
+.search-input {
+    padding: 10px;
+    padding-left: 30px; /* Space for symbol */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    transition: width 0.3s ease-in-out;
+}
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+   header {
+    background-color: #05386B;
+    
+    padding: 10px 0;
+    position:fixed;
+    width: 100%;
+   }
+   
+   nav ul {
+    background-color: #05386B;
+    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    position:fixed;
+    width: 100%;
+   }
+   
+   nav ul li a {
+    color: white;
+   font-size: 1.2em;
+    text-decoration: none;
+   }
+   nav ul li a:hover{
+   
+    color:#5CDB95;
+    font-family:  'Georgia', serif;
+    
+   }
+   .icon{
+    color:#5CDB95;
+    font-size: 1.7em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .heart,.cart{
+    color:#5CDB95;
+   }
+   .heart:hover{
+    color:rgb(243, 21, 221) ;
+   }
+    .cart:hover{
+        color:whitesmoke;
+    }
+        
+   dl {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  dt {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  dd {
+    margin-bottom: 10px;
+    color: black;
+  }
+   main {
+    padding: 20px;
+   }
+   
+   .product {
+    display: flex;
+    flex-direction: column;
+   
+   }
+   
+   .product-image img {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height:30%;
+    max-width: 400px;
+    height: auto; 
+    margin-right:auto;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20; 
+    transition: transform 0.3s ease-in-out;
+   }
+   .product-image img:hover {
+    transform: scale(1.5);
+   }
+   .large-image{
+    height:50;
+    margin-top:60px;
+    transition: transform 0.3s ease-in-out;
+   }
+   .large-image:hover{
+    transform: scale(1.2);
+   }
+   
+   .product-details {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    padding-top: 0px;
+    margin-top: 0;
+    text-align:left;
+    padding: 20px;
+    top:0;
+    margin-bottom: 20;
+    max-width: 400px;
+   }
+   
+   .product-description {
+    padding: 0px 0;
+    margin-top: 0;
+   }
+   
+   .product-price {
+    /* font-size: 24px; */
+    font-weight: 100px solid;
+    font-size: 1em;
+    color: #000;
+    
+   }
+   .product-price p{
+    text-decoration:line-through;
+   }
+   .rating-button{
+    width:100%;
+    margin-top:20px;
+    
+   }
+   .rating-button button{
+    background-color:darkgreen;
+    color: #fff;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    
+   }
+   
+   .product-buttons {
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: center;
+   }
+   
+   .product-buttons button {
+    background-color: #05386B;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: center;
+   }
+   
+   .product-buttons button:hover {
+    /* color: #333; */
+    background-color: #05386B;
+    transform: scale(1.2);
+   }
+   .rating-button{
+     width:100%; 
+    margin-top:20px;
+    color:darkgreen;
+   }
+
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+   }
+   .left-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    height: 100%;
+    color: white;
+    padding: 30px;
+}
+.center-section{
+    position :fixed;
+    margin-top: 0;
+    margin-left: 90px;
+    width: 200px; /* Adjust the width as needed */
+    height: 100%;
+     padding:30px; 
+     text-align: center;
+
+} 
+.right-section {
+    flex:1;
+    margin-top: 0;
+    padding-top:0;
+    margin-left: 350px; /* Set margin equal to the width of the left section */
+    padding: 20px;
+    height:100%;
+    overflow-y: auto;
+    top:0;
+   right:0;
+    margin-bottom: 0;
+}
+.storage {
+    color:black;
+    font-size: 1.2em;
+    font-weight: bold;
+
+width:100%; 
+margin-top: 20px;
+}
+.storage button{
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    border-color: #000;
+    
+}
+.storage button:hover{
+    border-color: #05386B;
+    color:black;
+    cursor: pointer;
+    border-color: #05386B;
+    border-width: 1.9px;
+}
+
+ svg {
+    display: block; /* Ensures the SVG is treated as a block-level element */
+   margin-top: 10;
+    fill: #3498db; /* Fill color */
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+}
+.offers dd,dt{
+    font-size: 1.2em;
+}
+.offers p{
+    font-size: 1.3em;
+}
+.payment-options{
+    font-size: 1.2em;
+}
+.payment-options p{
+    color:#000;
+    font-weight: bold;
+}
+.payment-options li{
+    text-align: start;
+}
+.highlights{
+    font-size: 1.2em;
+}
+.highligths p{
+    color:black;
+    font-weight: bold;
+}
+.specification th{
+    width:100%;
+    text-align: center;
+}
+table{
+    font-size: 1.2em;
+    width:90%;
+    border-collapse: collapse;
+    border:.8px solid #6c6767;
+    height: 400px;
+    margin:20px auto;
+    padding: 10 0 ;
+    
+}
+table td{
+    text-align: center;
+    padding: 10px;
+}
+table th{
+    padding: 10px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+    nav ul li a {
+        color: white;
+       font-size: 0.8em;
+        text-decoration: none;
+       }
+       .icon{
+        font-size: 1.3em;
+        
+       }
+}
+
+
+    
 
