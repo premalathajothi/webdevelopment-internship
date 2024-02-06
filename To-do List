@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      min-width: 250px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      list-style-type: none;
+      background: #77C9D4;
+      font-size: 18px;
+      transition: 0.2s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    ul li:nth-child(odd) {
+      background: #f9f9f9;
+    }
+
+    ul li:hover {
+      background: #A5A5AF;
+    }
+
+    ul li.checked {
+      background: #77C9D4;
+      color: #fff;
+      text-decoration: line-through;
+    }
+
+    ul li.checked::before {
+      content: '';
+      position: absolute;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
+
+    .buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .button {
+      cursor: pointer;
+      padding: 12px 16px;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+    .close {
+      
+      color: white;
+    }
+
+    .edit {
+      /* background-color: #77C9D4; */
+      color: white;
+    }
+
+    .header {
+      background-color: #57BC90;
+      padding: 30px 40px;
+      color: white;
+      text-align: center;
+    }
+
+    .header:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    input {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      width: 75%;
+      padding: 10px;
+      float: left;
+      font-size: 16px;
+    }
+
+    .addBtn {
+      padding: 10px;
+      width: 25%;
+      background: #015249;
+      color: white;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 0.3em;
+    }
+
+    /* .addBtn:hover {
+      background-color: #77C9D4;
+    } */
+  </style>
+</head>
+
+<body>
+
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+
+  <ul id="myUL"></ul>
+
+  <script>
+    // Add an edit option when double-clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('dblclick', function (ev) {
+      if (ev.target.tagName === 'LI') {
+        var oldValue = ev.target.innerText;
+        var newValue = prompt("Edit task:", oldValue);
+        if (newValue !== null) {
+          ev.target.innerText = newValue;
+        }
+      }
+    }, false);
+
+    // Toggle the "checked" class when clicking on a task
+    list.addEventListener('click', function (ev) {
+      if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+      }
+    }, false);
+
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+      var li = document.createElement("li");
+      var inputValue = document.getElementById("myInput").value;
+      var t = document.createTextNode(inputValue);
+      li.appendChild(t);
+      if (inputValue === '') {
+        alert("You must write something!");
+      } else {
+        document.getElementById("myUL").appendChild(li);
+      }
+      document.getElementById("myInput").value = "";
+
+      var buttonsDiv = document.createElement("div");
+      buttonsDiv.className = "buttons";
+
+      var spanClose = document.createElement("SPAN");
+      var txtClose = document.createTextNode("\u00D7");
+      spanClose.className = "button close";
+      spanClose.appendChild(txtClose);
+      spanClose.onclick = function () {
+        var div = this.parentElement.parentElement;
+        div.style.display = "none";
+      };
+
+      var spanEdit = document.createElement("SPAN");
+      var txtEdit = document.createTextNode("\u270E"); // Unicode for pencil icon
+      spanEdit.className = "button edit";
+      spanEdit.appendChild(txtEdit);
+      spanEdit.onclick = function () {
+        var listItem = this.parentElement.parentElement;
+        var oldValue = listItem.innerText;
+        var newValue = prompt("Edit task:", oldValue.trim());
+        if (newValue !== null) {
+          listItem.innerText = newValue;
+        }
+      };
+
+      buttonsDiv.appendChild(spanEdit);
+      buttonsDiv.appendChild(spanClose);
+      li.appendChild(buttonsDiv);
+    }
+  </script>
+
+</body>
+
+</html>
 
