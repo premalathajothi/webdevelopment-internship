@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* background-image: url('background.jpg'); */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #024950;
+    color: white;
+    padding: 25px 0;
+    
+}
+
+header .logo h1 {
+    margin: 0;
+    display: inline-block;
+    
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: whitesmoke;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover {
+    color:#60bdc6;
+    
+}
+
+/* Hero Section */
+.hero {
+    background: url('quiz-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: #964734;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 10px 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #042025;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color:#0fa4af ;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 0;
+    /* background-color: #f4f4f4; */
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.features .feature-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features .feature {
+    width: 30%;
+    padding: 20px;
+    /* background-color:#f4f4f4 ; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #f4f4f4; */
+}
+
+.features .feature h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features .feature p {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #042025;
+    color:#f4f4f4;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size:15px ;
+}

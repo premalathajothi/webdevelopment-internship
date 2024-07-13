@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Domains</title>
+    <link rel="stylesheet" href="domain.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Quiz App</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="domain.html">domain</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="settings.html">settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Choose Your Quiz Domain</h2>
+            <p>Select a domain to test your knowledge and have fun!</p>
+        </div>
+    </section>
+
+    <section class="domains">
+        <div class="container">
+            <div class="domain-card">
+                <h3>Select a Quiz Domain</h3>
+                <select id="domainSelect">
+                    <option value="programming.html">Match the following</option>
+                    <option value="gk.html">Fill in the blanks</option>
+                    <option value="science.html">True or False</option>
+                    <option value="sports.html">Find Crossword</option>
+                </select>
+                <button onclick="startQuiz()">Start Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Quiz App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

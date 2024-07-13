@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('background.jpg');
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #024950;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    color:#60bdc6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('quiz-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    color:#964734;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Domains Section */
+.domains {
+    padding: 40px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.domains .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.domain-card {
+    width: 22%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.domain-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.domain-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.domain-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.domain-card button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #042025;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.domain-card button:hover {
+    background-color: #042025;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #042025;
+    color:#f4f4f4;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size:15px ;
+}
